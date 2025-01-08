@@ -1,12 +1,17 @@
-import { createContext } from "react";
+import { createContext, useState } from "react";
 
 
-const ShopiContext = createContext();
+export const ShopiContext = createContext();
 
 
 export const ShopiProvider = ({children}) => {
+
+    const [count, setCount] = useState(0);
+
     return (
-        <ShopiContext.Provider>
+        <ShopiContext.Provider value={{
+            count, setCount
+        }}>
             {children}
         </ShopiContext.Provider>
     )
