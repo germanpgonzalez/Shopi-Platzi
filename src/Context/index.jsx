@@ -5,10 +5,17 @@ export const ShopiContext = createContext();
 
 
 export const ShopiProvider = ({children}) => {
-
+    //Product Detail - Increment Quantity
     const [count, setCount] = useState(0);
     const [isProductDetailOpen, setIsProductDetailOpen] = useState(false);
 
+    //Shopi Cart - Add products to cart
+    const [cartProducts, setCartProducts] = useState([]);
+
+    //Product Detail - Show Product
+    const [productToShow, setProductToShow] = useState({});
+
+    //Product Detail - Open/Close
     const openProductDetail = () => {
         setIsProductDetailOpen(true)
     }
@@ -21,9 +28,13 @@ export const ShopiProvider = ({children}) => {
         <ShopiContext.Provider value={{
             count, 
             setCount,
-            isProductDetailOpen,
             openProductDetail,
-            closeProductDetail
+            closeProductDetail,
+            isProductDetailOpen,
+            productToShow,
+            setProductToShow,
+            cartProducts,
+            setCartProducts
         }}>
             {children}
         </ShopiContext.Provider>
