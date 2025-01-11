@@ -1,8 +1,16 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Curso de React.js con Vite.js y TailwindCSS - Platzi
 
-Currently, two official plugins are available:
+En este proyecto se construye un E-commerce con React.js. Se integra Vite.js para el entorno de desarrollo, TailwindCSS para el manejo de estilos y React Router DOM para las rutas y navegación.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+## Screenshots
+
+![App Screenshot](./assets/shopi.png)
+
+
+
+## Utilidades
+
+La Api rest utilizada en este proyecto es: [Platzi Fake Store API](https://fakeapi.platzi.com/)
+
