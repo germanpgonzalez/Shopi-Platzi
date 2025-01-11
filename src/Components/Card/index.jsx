@@ -26,7 +26,7 @@ export const Card = (data, handleDelete) => {
         if(isInCart) {
             return (
                 <div className="absolute top-0 right-0 flex justify-center items-center bg-black   w-6 h-6 rounded-full m-2 p-1"> 
-                    <CheckIcon className="size-6 text-white" onClick={ () => handleDelete(data.data.id)} />
+                    <CheckIcon className="size-6 text-white"/>
                 </div>
             )
         } else {
