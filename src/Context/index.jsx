@@ -11,6 +11,9 @@ export const ShopiProvider = ({children}) => {
     //Shopi Cart - Add products to cart
     const [cartProducts, setCartProducts] = useState([]);
 
+    //Shopi Cart - Order
+    const [order, setOrder] = useState([]);
+
     //Product Detail - Show Product
     const [productToShow, setProductToShow] = useState({});
 
@@ -37,7 +40,9 @@ export const ShopiProvider = ({children}) => {
             setCartProducts,
             isCheckoutSideMenu,
             openCheckoutSideMenu,
-            closeCheckoutSideMenu
+            closeCheckoutSideMenu,
+            order,
+            setOrder
         }}>
             {children}
         </ShopiContext.Provider>

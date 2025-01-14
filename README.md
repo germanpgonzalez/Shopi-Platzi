@@ -6,7 +6,7 @@ En este proyecto se construye un E-commerce con React.js. Se integra Vite.js par
 
 ## Screenshots
 
-![App Screenshot](./assets/shopi.png)
+![App Screenshot](/src/assets/shopi.png)
 
 
 
