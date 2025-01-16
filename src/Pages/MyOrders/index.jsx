@@ -12,7 +12,7 @@ export const MyOrders = () => {
   return (
     <Layout>
       <div className="flex w-80 items-center relative justify-center">
-        <h1>My Orders</h1>
+        <h1 className="font-medium text-xl mb-4">My Orders</h1>
       </div>
       
       {
